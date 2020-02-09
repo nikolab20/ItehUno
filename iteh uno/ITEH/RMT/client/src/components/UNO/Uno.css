@@ -1,0 +1,57 @@
+﻿body {
+    margin: auto;
+    text-align: center;
+    background: url(../../assert/images/UNOLogo.png);
+    background-size: 10%;
+    background-repeat: repeat;
+}
+
+.Container {
+    font-weight: bold;
+    width: 360px;
+    margin: auto;
+    height: 510px;
+}
+
+.Title {
+    background-color: red;
+    color: yellow;
+    font-size: 40px;
+    display: inline-block;
+    width: 75%;
+    text-align: center;
+}
+
+.Playground {
+    text-align: center;
+    background-image: url(../../assert/images/backgroud.jfif);
+    display: inline-block;
+    width: 75%;
+    height: 450px;
+}
+
+.Control {
+    background-color: black;
+    font-size: 30px;
+    width: 75%;
+    display: inline-block;
+    text-align: center;
+}
+
+.TableCard {
+    border-radius: 5px;
+    height: 95px;
+    width: 65px;
+    color: black;
+    font-family: 'Times New Roman';
+    position: fixed;
+    margin-top: 175px;
+    margin-bottom: 270px;
+    left: 50%;
+    float: inherit;
+    background-size: contain;
+}
+
+.Card {
+    float: inherit;
+}

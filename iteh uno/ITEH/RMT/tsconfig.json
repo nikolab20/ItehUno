@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "lib": [ "dom", "es5", "es6" ],
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react",
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "allowJs": true,
+    "outDir": "dist/",
+    "noEmitOnError": true
+  },
+  "include": [
+    "./server/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "./client/**/*"
+  ],
+  "files": [
+    "server.ts"
+  ]
+}

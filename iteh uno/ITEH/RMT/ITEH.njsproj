@@ -1,0 +1,376 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>ITEH</Name>
+    <RootNamespace>RMT</RootNamespace>
+    <EnableTypeScript>true</EnableTypeScript>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+    <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>b889e326-09d2-415e-b50f-0a137769b86e</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>dist/server.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>3000</NodejsPort>
+    <StartWebBrowser>True</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="client\public\CardTypes.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\assert\images\backgroud.jfif" />
+    <Content Include="client\src\assert\images\Cards\0B.png" />
+    <Content Include="client\src\assert\images\Cards\0G.png" />
+    <Content Include="client\src\assert\images\Cards\0R.png" />
+    <Content Include="client\src\assert\images\Cards\0Y.png" />
+    <Content Include="client\src\assert\images\Cards\1B.png" />
+    <Content Include="client\src\assert\images\Cards\1G.png" />
+    <Content Include="client\src\assert\images\Cards\1R.png" />
+    <Content Include="client\src\assert\images\Cards\1Y.png" />
+    <Content Include="client\src\assert\images\Cards\2B.png" />
+    <Content Include="client\src\assert\images\Cards\2G.png" />
+    <Content Include="client\src\assert\images\Cards\2R.png" />
+    <Content Include="client\src\assert\images\Cards\2Y.png" />
+    <Content Include="client\src\assert\images\Cards\3B.png" />
+    <Content Include="client\src\assert\images\Cards\3G.png" />
+    <Content Include="client\src\assert\images\Cards\3R.png" />
+    <Content Include="client\src\assert\images\Cards\3Y.png" />
+    <Content Include="client\src\assert\images\Cards\4B.png" />
+    <Content Include="client\src\assert\images\Cards\4G.png" />
+    <Content Include="client\src\assert\images\Cards\4R.png" />
+    <Content Include="client\src\assert\images\Cards\BL+4.png" />
+    <Content Include="client\src\assert\images\Cards\4W2.png" />
+    <Content Include="client\src\assert\images\Cards\4Y.png" />
+    <Content Include="client\src\assert\images\Cards\5B.png" />
+    <Content Include="client\src\assert\images\Cards\5G.png" />
+    <Content Include="client\src\assert\images\Cards\5R.png" />
+    <Content Include="client\src\assert\images\Cards\5Y.png" />
+    <Content Include="client\src\assert\images\Cards\6B.png" />
+    <Content Include="client\src\assert\images\Cards\6G.png" />
+    <Content Include="client\src\assert\images\Cards\6R.png" />
+    <Content Include="client\src\assert\images\Cards\6Y.png" />
+    <Content Include="client\src\assert\images\Cards\7B.png" />
+    <Content Include="client\src\assert\images\Cards\7G.png" />
+    <Content Include="client\src\assert\images\Cards\7R.png" />
+    <Content Include="client\src\assert\images\Cards\7Y.png" />
+    <Content Include="client\src\assert\images\Cards\8B.png" />
+    <Content Include="client\src\assert\images\Cards\8G.png" />
+    <Content Include="client\src\assert\images\Cards\8R.png" />
+    <Content Include="client\src\assert\images\Cards\8Y.png" />
+    <Content Include="client\src\assert\images\Cards\9B.png" />
+    <Content Include="client\src\assert\images\Cards\9G.png" />
+    <Content Include="client\src\assert\images\Cards\9R.png" />
+    <Content Include="client\src\assert\images\Cards\9Y.png" />
+    <Content Include="client\src\assert\images\Cards\DB.png" />
+    <Content Include="client\src\assert\images\Cards\DG.png" />
+    <Content Include="client\src\assert\images\Cards\DR.png" />
+    <Content Include="client\src\assert\images\Cards\DY.png" />
+    <Content Include="client\src\assert\images\Cards\RB.png" />
+    <Content Include="client\src\assert\images\Cards\RG.png" />
+    <Content Include="client\src\assert\images\Cards\RR.png" />
+    <Content Include="client\src\assert\images\Cards\RY.png" />
+    <Content Include="client\src\assert\images\Cards\SB.png" />
+    <Content Include="client\src\assert\images\Cards\SG.png" />
+    <Content Include="client\src\assert\images\Cards\SR.png" />
+    <Content Include="client\src\assert\images\Cards\SY.png" />
+    <Content Include="client\src\assert\images\Cards\BLW.png" />
+    <Content Include="client\src\assert\images\Cards\W2.png" />
+    <Content Include="client\src\assert\images\UNOLogo.png" />
+    <Content Include="client\src\components\UI\AlertSpinner\AlertSpinner.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\components\UI\AlertSpinner\AlertSpinner.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\components\UI\AlertStandard\AlertStandard.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\components\UI\Alert\Alert.js" />
+    <Content Include="client\src\components\UI\CardButton\CardButton.js" />
+    <Content Include="client\src\components\UI\DrawButton\DrawButton.js" />
+    <Content Include="client\src\components\UI\LinearQuery\LinearQuery.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\components\UI\StyledButton\StyledButton.js" />
+    <Content Include="client\src\components\UI\UNODialog\UNODialog.css" />
+    <Content Include="client\src\components\UI\UNODialog\UNODialog.js" />
+    <Content Include="client\src\containers\Auth\Logout\Logout.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\store\reducers\register.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\store\utility.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="dist\app-bundle.js" />
+    <Content Include="dist\app-bundle.js.map" />
+    <Content Include="dist\client\src\store\actions\actionTypes.js" />
+    <Content Include="dist\client\src\store\actions\actionTypes.js.map" />
+    <Content Include="dist\client\src\store\reducers\auth.js" />
+    <Content Include="dist\client\src\store\reducers\auth.js.map" />
+    <Content Include="dist\client\src\store\reducers\register.js" />
+    <Content Include="dist\client\src\store\reducers\register.js.map" />
+    <Content Include="dist\client\src\store\utility.js" />
+    <Content Include="dist\client\src\store\utility.js.map" />
+    <Content Include="dist\index.js" />
+    <Content Include="dist\index.js.map" />
+    <Content Include="dist\server.js" />
+    <Content Include="dist\server.js.map" />
+    <Content Include="dist\server\api\models\user.js" />
+    <Content Include="dist\server\api\models\user.js.map" />
+    <Content Include="dist\server\api\routes\user.js" />
+    <Content Include="dist\server\api\routes\user.js.map" />
+    <Content Include="dist\server\src\card\card.js" />
+    <Content Include="dist\server\src\card\card.js.map" />
+    <Content Include="dist\server\src\card\colors.js" />
+    <Content Include="dist\server\src\card\colors.js.map" />
+    <Content Include="dist\server\src\card\values.js" />
+    <Content Include="dist\server\src\card\values.js.map" />
+    <Content Include="dist\server\src\deck\GameDeck.js" />
+    <Content Include="dist\server\src\deck\GameDeck.js.map" />
+    <Content Include="dist\server\src\gameManager\GameManager.js" />
+    <Content Include="dist\server\src\gameManager\GameManager.js.map" />
+    <Content Include="dist\server\src\player\player.js" />
+    <Content Include="dist\server\src\player\player.js.map" />
+    <Content Include="index.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\components\UI\Button\Button.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\components\UI\Button\Button.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\components\UI\Input\Input.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\components\UI\Input\Input.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\components\UI\Layout\Layout.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\components\UI\Layout\Layout.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\components\UI\NavigationItems\NavigationItems.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\components\UI\NavigationItems\NavigationItems.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\components\UI\NavigationItems\NavigationItem\NavigationItem.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\components\UI\NavigationItems\NavigationItem\NavigationItem.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\components\UI\Spinner\Spinner.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\components\UI\Spinner\Spinner.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\components\UI\Toolbar\Toolbar.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\components\UI\Toolbar\Toolbar.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\components\UNO\Uno.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\components\UNO\Uno.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\containers\Auth\Auth.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\containers\Auth\Auth.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\containers\Register\Register.css">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\containers\Register\Register.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\store\actions\actionTypes.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\store\actions\auth.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\store\actions\index.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\store\actions\register.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="client\src\store\reducers\auth.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="server\api\models\user.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="server\api\routes\user.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="tsconfig.json">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="webpack-config.js">
+      <SubType>Code</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="client\src\App.jsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <Content Include="index.tsx">
+      <SubType>Code</SubType>
+    </Content>
+    <TypeScriptCompile Include="client\src\card\card.ts" />
+    <TypeScriptCompile Include="client\src\card\colors.ts" />
+    <TypeScriptCompile Include="client\src\card\values.ts" />
+    <TypeScriptCompile Include="server.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="server\src\card\card.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="server\src\card\colors.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="server\src\card\values.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="server\src\deck\GameDeck.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="server\src\gameManager\GameManager.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="server\src\player\player.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="client\" />
+    <Folder Include="client\src\" />
+    <Folder Include="client\public\" />
+    <Folder Include="client\src\assert\" />
+    <Folder Include="client\src\assert\images\" />
+    <Folder Include="client\src\assert\images\Cards\" />
+    <Folder Include="client\src\card\" />
+    <Folder Include="client\src\components\" />
+    <Folder Include="client\src\components\UI\Alert\" />
+    <Folder Include="client\src\components\UI\Button\" />
+    <Folder Include="client\src\components\UI\DrawButton\" />
+    <Folder Include="client\src\components\UI\Input\" />
+    <Folder Include="client\src\components\UI\Layout\" />
+    <Folder Include="client\src\components\UI\NavigationItems\" />
+    <Folder Include="client\src\components\UI\NavigationItems\NavigationItem\" />
+    <Folder Include="client\src\components\UI\AlertSpinner\" />
+    <Folder Include="client\src\components\UI\LinearQuery\" />
+    <Folder Include="client\src\components\UI\CardButton\" />
+    <Folder Include="client\src\components\UI\AlertStandard\" />
+    <Folder Include="client\src\components\UI\Spinner\" />
+    <Folder Include="client\src\components\UI\StyledButton\" />
+    <Folder Include="client\src\components\UI\Toolbar\" />
+    <Folder Include="client\src\components\UI\UNODialog\" />
+    <Folder Include="client\src\components\UNO\" />
+    <Folder Include="client\src\components\UI\" />
+    <Folder Include="client\src\containers\" />
+    <Folder Include="client\src\containers\Auth\" />
+    <Folder Include="client\src\containers\Auth\Logout\" />
+    <Folder Include="client\src\containers\Register\" />
+    <Folder Include="client\src\store\" />
+    <Folder Include="client\src\store\actions\" />
+    <Folder Include="client\src\store\reducers\" />
+    <Folder Include="dist\" />
+    <Folder Include="dist\client\" />
+    <Folder Include="dist\client\src\" />
+    <Folder Include="dist\client\src\store\" />
+    <Folder Include="dist\client\src\store\actions\" />
+    <Folder Include="dist\client\src\store\reducers\" />
+    <Folder Include="dist\server\" />
+    <Folder Include="dist\server\api\" />
+    <Folder Include="dist\server\api\models\" />
+    <Folder Include="dist\server\api\routes\" />
+    <Folder Include="dist\server\src\" />
+    <Folder Include="dist\server\src\card\" />
+    <Folder Include="dist\server\src\deck\" />
+    <Folder Include="dist\server\src\gameManager\" />
+    <Folder Include="dist\server\src\player\" />
+    <Folder Include="server\" />
+    <Folder Include="server\api\" />
+    <Folder Include="server\api\models\" />
+    <Folder Include="server\api\routes\" />
+    <Folder Include="server\src\" />
+    <Folder Include="server\src\card\" />
+    <Folder Include="server\src\deck\" />
+    <Folder Include="server\src\gameManager\" />
+    <Folder Include="server\src\player\" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,36 @@
+﻿.Button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+    .Button:first-of-type {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    .Button:disabled {
+        color: #ccc;
+        cursor: not-allowed;
+    }
+
+.Success {
+    color: #1c1a18;
+}
+
+.Danger {
+    color: #944317;
+}
+
+.PlayGame {
+    color: #1c1a18;
+    border: 1px groove #1c1a18;
+    background-color: white;
+    border-radius: 20%;
+}

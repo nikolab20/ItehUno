@@ -1,0 +1,9 @@
+C:\Users\Aleksa\source\repos\RMT\RMT\obj\Debug\RMT.njsprojAssemblyReference.cache
+C:\Users\Aleksa\source\repos\RMT\RMT\obj\Debug\RMT.njsproj.CoreCompileInputs.cache
+C:\Users\Aleksa\source\repos\RMT\RMT\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\nikol\Source\Repos\rmtprojectuno\RMT\RMT\obj\Debug\RMT.njsprojAssemblyReference.cache
+C:\Users\nikol\Source\Repos\rmtprojectuno\RMT\RMT\obj\Debug\RMT.njsproj.CoreCompileInputs.cache
+C:\Users\nikol\Source\Repos\rmtprojectuno\RMT\RMT\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\nikol\RMT Projekat\rmtuno\RMT\RMT\obj\Debug\RMT.njsprojAssemblyReference.cache
+C:\Users\nikol\RMT Projekat\rmtuno\RMT\RMT\obj\Debug\RMT.njsproj.CoreCompileInputs.cache
+C:\Users\nikol\RMT Projekat\rmtuno\RMT\RMT\bin\Microsoft.NodejsTools.WebRole.dll
